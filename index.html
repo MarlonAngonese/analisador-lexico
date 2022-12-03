@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analisador Léxico</title>
+    <link href="./css/boostrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark bg-gradient text-center">
+        <h1 class="text-light text-center" style="margin-left: 2%;">Analisador Léxico</h1>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Content -->
+    <div class="container">
+        <div class="form-group text-light mb-3">
+            <label for="token">Token</label>
+            <div style="clear: both;"></div>
+            <input type="text" class="form-control" id="token" style="width: 80%; float: left; margin-right: 2%;">
+            <button type="button" id="add-token" class="btn btn-secondary" style="width: 18%;">Adicionar</button>
+        </div>
+        <div class="form-group text-light mb-4">
+            <label for="token-validation">Validar Token</label>
+            <input type="text" class="form-control" id="token-validation">
+        </div>
+
+        <div id="token-list" class="mb-4">
+            <!-- <span class="badge rounded-pill bg-success">Success</span> -->
+        </div>
+
+        <table id="table" class="table table-dark table-bordered">
+            <thead id="thead">
+                <th class="text-center">-</th>
+                <th class="text-center">a</th>
+                <th class="text-center">b</th>
+                <th class="text-center">c</th>
+                <th class="text-center">d</th>
+                <th class="text-center">e</th>
+                <th class="text-center">f</th>
+                <th class="text-center">g</th>
+                <th class="text-center">h</th>
+                <th class="text-center">i</th>
+                <th class="text-center">j</th>
+                <th class="text-center">k</th>
+                <th class="text-center">l</th>
+                <th class="text-center">m</th>
+                <th class="text-center">n</th>
+                <th class="text-center">o</th>
+                <th class="text-center">p</th>
+                <th class="text-center">q</th>
+                <th class="text-center">r</th>
+                <th class="text-center">s</th>
+                <th class="text-center">t</th>
+                <th class="text-center">u</th>
+                <th class="text-center">v</th>
+                <th class="text-center">w</th>
+                <th class="text-center">x</th>
+                <th class="text-center">y</th>
+                <th class="text-center">z</th>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <br><br><br>
+    <div style="clear: both;"></div>
+
+    <!-- Content -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white position-fixed fixed-bottom">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Made by:
+            <a class="text-white" href="https://github.com/MarlonAngonese">Marlon Diogo Angonese</a>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/font-awesome.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
