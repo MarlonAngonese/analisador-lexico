@@ -100,7 +100,24 @@ $('#token-validation').keyup((e) => {
     let letter = e.key;
     let q = letterCounter;
 
-    console.log(letter);
+    //console.log(letter);
+
+    if ($('#token-validation').val() == "") {
+        letterCounter = 0;
+        letterHistory = [];
+        invalid = false;
+        lastSpace = false;
+        countPostInvalid = 0;
+
+        for (let j = 0; j < qPrincipal + 1; j++) {
+            for (let i = 0; i < 26; i++) {
+                let letterChar = intToChar(i);
+                $('#q' + j + '-' + letterChar).css('background-color', '');
+                $('#token-validation').css('background-color', '');
+                console.log (j + " " + i)
+            }
+        }
+    }
 
     if (letter.charCodeAt(0) >= 97 && letter.charCodeAt(0) <= 123 && !invalid || (letterHistory.length <= 0 && invalid)) {
         // Remove last cell bg css
@@ -183,9 +200,9 @@ $('#token-validation').keyup((e) => {
         //ignore	
         countPostInvalid++;
         $('#token-validation').css('background-color', 'rgb(230, 68, 44)');
-        console.log(countPostInvalid);
+        //console.log(countPostInvalid);
     }
-    console.log(letterHistory);
+    //console.log(letterHistory);
 })
 
 const intToChar = (int) => {
